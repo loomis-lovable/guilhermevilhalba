@@ -17,9 +17,9 @@
     --popover: 222 47% 8%;
     --popover-foreground: 210 40% 98%;
 
-    /* Primary brand - Electric Blue */
-    --primary: 217 91% 60%;
-    --primary-foreground: 222 47% 6%;
+    /* Primary brand - Loomis Green #248E52 */
+    --primary: 146 60% 35%;
+    --primary-foreground: 210 40% 98%;
 
     /* Secondary - Slate */
     --secondary: 217 33% 17%;
@@ -29,8 +29,8 @@
     --muted: 217 33% 17%;
     --muted-foreground: 215 20% 65%;
 
-    /* Accent - Teal/Cyan for tech feel */
-    --accent: 199 89% 48%;
+    /* Accent - Lighter Loomis Green */
+    --accent: 146 50% 45%;
     --accent-foreground: 222 47% 6%;
 
     /* TASH&CO distinct identity - Warm Gold */
