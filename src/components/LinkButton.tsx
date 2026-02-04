@@ -5,7 +5,7 @@ interface LinkButtonProps {
   title: string;
   description: string;
   href: string;
-  variant?: "primary" | "tashco";
+  variant?: "primary" | "neutral";
   delay?: number;
 }
 
@@ -24,7 +24,7 @@ export function LinkButton({ title, description, href, variant = "primary", dela
         "opacity-0 animate-fade-in",
         isPrimary 
           ? "bg-gradient-card hover:border-primary/50 hover:shadow-button" 
-          : "bg-card hover:border-tashco/50 hover:shadow-tashco"
+          : "bg-card hover:border-foreground/30 hover:shadow-card"
       )}
       style={{ animationDelay: `${delay}ms` }}
     >
@@ -34,23 +34,18 @@ export function LinkButton({ title, description, href, variant = "primary", dela
           "absolute inset-0 rounded-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100",
           isPrimary 
             ? "bg-primary/5" 
-            : "bg-tashco/5"
+            : "bg-foreground/5"
         )} 
       />
       
       <div className="relative flex items-center justify-between">
-        <h3 
-          className={cn(
-            "text-lg font-semibold tracking-tight",
-            isPrimary ? "text-foreground" : "text-gradient-tashco"
-          )}
-        >
+        <h3 className="text-lg font-semibold tracking-tight text-foreground">
           {title}
         </h3>
         <ArrowRight 
           className={cn(
             "h-5 w-5 transition-transform duration-300 group-hover:translate-x-1",
-            isPrimary ? "text-primary" : "text-tashco"
+            isPrimary ? "text-primary" : "text-foreground"
           )} 
         />
       </div>
@@ -64,7 +59,7 @@ export function LinkButton({ title, description, href, variant = "primary", dela
         className={cn(
           "absolute bottom-0 left-5 right-5 h-0.5 rounded-full transition-all duration-300",
           "opacity-0 group-hover:opacity-100",
-          isPrimary ? "bg-gradient-primary" : "bg-gradient-tashco"
+          isPrimary ? "bg-gradient-primary" : "bg-foreground/50"
         )} 
       />
     </a>
