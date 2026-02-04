@@ -8,8 +8,8 @@ const links = [
     variant: "primary" as const,
   },
   {
-    title: "CRM Loomis",
-    description: "Ferramenta para organizar, acompanhar e escalar o processo comercial.",
+    title: "Loomis CRM",
+    description: "Ferramenta integrada ao WhatsApp para organizar, acompanhar e escalar o processo comercial.",
     href: "#loomis",
     variant: "primary" as const,
   },
@@ -21,9 +21,9 @@ const links = [
   },
   {
     title: "TASH&CO",
-    description: "Consultoria e soluções estratégicas para crescimento comercial.",
+    description: "Agência & Produtora de conteúdo para potencializar a geração de novos clientes para a sua empresa.",
     href: "#tashco",
-    variant: "tashco" as const,
+    variant: "neutral" as const,
   },
 ];
 
