@@ -8,7 +8,7 @@ const links = [
     variant: "primary" as const,
   },
   {
-    title: "Loomis",
+    title: "CRM Loomis",
     description: "Ferramenta para organizar, acompanhar e escalar o processo comercial.",
     href: "#loomis",
     variant: "primary" as const,
