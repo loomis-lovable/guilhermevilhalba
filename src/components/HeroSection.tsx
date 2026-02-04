@@ -7,17 +7,33 @@ export function HeroSection() {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-64 bg-primary/20 rounded-full blur-3xl opacity-50" />
       
       {/* Profile Photo */}
-      <div className="relative mb-6 opacity-0 animate-fade-in" style={{ animationDelay: "100ms" }}>
+      <div className="relative mb-4 opacity-0 animate-fade-in" style={{ animationDelay: "100ms" }}>
         <div className="relative">
           <img 
             src={profilePhoto} 
-            alt="Foto de perfil" 
+            alt="Foto de perfil de Guilherme Vilhalba" 
             className="w-24 h-24 rounded-full object-cover border-2 border-primary shadow-glow"
           />
           {/* Glow ring effect */}
           <div className="absolute inset-0 rounded-full border-2 border-primary/30 animate-glow-pulse" />
         </div>
       </div>
+      
+      {/* Name */}
+      <h2 
+        className="relative text-xl font-bold tracking-tight mb-1 opacity-0 animate-fade-in"
+        style={{ animationDelay: "150ms" }}
+      >
+        Guilherme Vilhalba
+      </h2>
+      
+      {/* Tagline */}
+      <p 
+        className="relative text-sm text-muted-foreground mb-6 opacity-0 animate-fade-in"
+        style={{ animationDelay: "175ms" }}
+      >
+        Marido da Laiz | Pai do Heitor | Vendedor
+      </p>
       
       {/* Headline */}
       <h1 
