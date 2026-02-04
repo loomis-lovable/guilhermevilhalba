@@ -35,22 +35,6 @@ export function HeroSection() {
         Marido da Laiz | Pai do Heitor | Vendedor
       </p>
       
-      {/* Headline */}
-      <h1 
-        className="relative text-2xl sm:text-3xl font-extrabold tracking-tight leading-tight mb-4 opacity-0 animate-fade-in"
-        style={{ animationDelay: "200ms" }}
-      >
-        Venda mais com processos comerciais{" "}
-        <span className="text-gradient-primary">claros, previsíveis e escaláveis.</span>
-      </h1>
-      
-      {/* Subheadline */}
-      <p 
-        className="relative text-base sm:text-lg text-muted-foreground max-w-md leading-relaxed opacity-0 animate-fade-in"
-        style={{ animationDelay: "300ms" }}
-      >
-        Treinamentos, mentoria e tecnologia para times comerciais de alta performance.
-      </p>
       
       {/* Divider */}
       <div 
