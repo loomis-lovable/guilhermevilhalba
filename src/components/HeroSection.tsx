@@ -7,7 +7,7 @@ export function HeroSection() {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-64 bg-primary/20 rounded-full blur-3xl opacity-50" />
       
       {/* Profile Photo */}
-      <div className="relative mb-6 opacity-0 animate-fade-in" style={{ animationDelay: "100ms" }}>
+      <div className="relative mb-4 opacity-0 animate-fade-in" style={{ animationDelay: "100ms" }}>
         <div className="relative">
           <img 
             src={profilePhoto} 
@@ -18,6 +18,14 @@ export function HeroSection() {
           <div className="absolute inset-0 rounded-full border-2 border-primary/30 animate-glow-pulse" />
         </div>
       </div>
+      
+      {/* Name */}
+      <h2 
+        className="text-xl font-bold text-foreground mb-4 opacity-0 animate-fade-in"
+        style={{ animationDelay: "150ms" }}
+      >
+        Guilherme Vilhalba
+      </h2>
       
       {/* Headline */}
       <h1 
