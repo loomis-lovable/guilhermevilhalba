@@ -50,21 +50,21 @@ export function LinkButton({
       
       <div className="relative flex items-center gap-3">
         {/* Icon */}
-        {customIcon ? (
-          <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-background/50 flex items-center justify-center overflow-hidden">
-            <img src={customIcon} alt="" className="w-7 h-7 object-contain" />
-          </div>
-        ) : Icon ? (
+        {(customIcon || Icon) && (
           <div className={cn(
             "flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center",
             isPrimary ? "bg-primary/20" : "bg-foreground/10"
           )}>
-            <Icon className={cn(
-              "w-5 h-5",
-              isPrimary ? "text-primary" : "text-foreground"
-            )} />
+            {customIcon ? (
+              <img src={customIcon} alt="" className="w-6 h-6 object-contain" />
+            ) : Icon ? (
+              <Icon className={cn(
+                "w-5 h-5",
+                isPrimary ? "text-primary" : "text-foreground"
+              )} />
+            ) : null}
           </div>
-        ) : null}
+        )}
         
         <div className="flex-1 min-w-0">
           <div className="flex items-center justify-between">
